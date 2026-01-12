@@ -1,0 +1,243 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZUI_B_EHF_FEE/$metadata">
+        <edmx:Include Namespace="cds_zui_sd_ehf_fee"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="cds_zui_sd_ehf_fee.zc_cds_sd_ehf_feeType"  >
+                <Annotation Term="UI.LineItem"  >
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingDocument"/>
+                            <PropertyValue Property="Label" String="SOP Number"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingDocumentTypeName"/>
+                            <PropertyValue Property="Label" String="SOP Type"/>
+                        </Record>
+                            <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CompanyCode"/>
+                            <PropertyValue Property="Label" String="Company Code"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrganization"/>
+                            <PropertyValue Property="Label" String="Sales Organization"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="DistributionChannel"/>
+                            <PropertyValue Property="Label" String="Distribution Channel"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Division"/>
+                            <PropertyValue Property="Label" String="Division"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingDocumentType"/>
+                            <PropertyValue Property="Label" String="Billing Type"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AddresseeFullName"/>
+                            <PropertyValue Property="Label" String="Customer Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="shiptoname"/>
+                            <PropertyValue Property="Label" String="Ship To Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Region"/>
+                            <PropertyValue Property="Label" String="State"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TaxJurisdiction"/>
+                            <PropertyValue Property="Label" String="Tax Jurisdiction"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PostingDate"/>
+                            <PropertyValue Property="Label" String="GL Posting Date"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingDocumentDate"/>
+                            <PropertyValue Property="Label" String="Billing Date"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingDocumentItem"/>
+                            <PropertyValue Property="Label" String="SOP Item Number"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Material"/>
+                            <PropertyValue Property="Label" String="Part Number"/>
+                        </Record>
+                            <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ConditionType"/>
+                            <PropertyValue Property="Label" String="Item Number"/>
+                        </Record>
+                            <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="fee_description"/>
+                            <PropertyValue Property="Label" String="Item Description"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BillingQuantityUnit"/>
+                            <PropertyValue Property="Label" String="Quantity"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="unitprice"/>
+                            <PropertyValue Property="Label" String="Unit Price"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetAmount"/>
+                            <PropertyValue Property="Label" String="Extended Price"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TransactionCurrency"/>
+                            <PropertyValue Property="Label" String="Document Currency"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Country"/>
+                            <PropertyValue Property="Label" String="Country From Sales Line Item"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreationDate" />
+                            <PropertyValue Property="Label" String="Invoice Date"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreatedByUser"/>
+                            <PropertyValue Property="Label" String="Created By"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#idGenInfo"/>
+                            <PropertyValue Property="Label" String="General Information"/>
+                            <PropertyValue Property="ID" String="idGenInfo"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="idGenInfo">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingDocument"/>
+                                    <PropertyValue Property="Label" String="SOP Number"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingDocumentTypeName"/>
+                                    <PropertyValue Property="Label" String="SOP Type"/>
+                                </Record>
+                                 <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CompanyCode"/>
+                                    <PropertyValue Property="Label" String="Company Code"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="SalesOrganization"/>
+                                    <PropertyValue Property="Label" String="Sales Organization"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="DistributionChannel"/>
+                                    <PropertyValue Property="Label" String="Distribution Channel"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Division"/>
+                                    <PropertyValue Property="Label" String="Division"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingDocumentType"/>
+                                    <PropertyValue Property="Label" String="Billing Type"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="AddresseeFullName"/>
+                                    <PropertyValue Property="Label" String="Customer Name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="shiptoname"/>
+                                    <PropertyValue Property="Label" String="Ship To Name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Region"/>
+                                    <PropertyValue Property="Label" String="State"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="TaxJurisdiction"/>
+                                    <PropertyValue Property="Label" String="Tax Jurisdiction"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PostingDate"/>
+                                    <PropertyValue Property="Label" String="GL Posting Date"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingDocumentDate"/>
+                                    <PropertyValue Property="Label" String="Billing Date"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingDocumentItem"/>
+                                    <PropertyValue Property="Label" String="SOP Item Number"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Material"/>
+                                    <PropertyValue Property="Label" String="Part Number"/>
+                                </Record>
+                                 <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ConditionType"/>
+                                    <PropertyValue Property="Label" String="Item Number"/>
+                                </Record>
+                                 <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="fee_description"/>
+                                    <PropertyValue Property="Label" String="Item Description"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BillingQuantityUnit"/>
+                                    <PropertyValue Property="Label" String="Quantity"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="unitprice"/>
+                                    <PropertyValue Property="Label" String="Unit Price"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="NetAmount"/>
+                                    <PropertyValue Property="Label" String="Extended Price"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="TransactionCurrency"/>
+                                    <PropertyValue Property="Label" String="Document Currency"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Country"/>
+                                    <PropertyValue Property="Label" String="Country From Sales Line Item"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CreationDate" />
+                                    <PropertyValue Property="Label" String="Invoice Date"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CreatedByUser"/>
+                                    <PropertyValue Property="Label" String="Created By"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>  
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="Object Page"/>
+                        <PropertyValue Property="TypeNamePlural" String="Reports"/>
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="BillingDocument"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="Description">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="BillingDocumentItem"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
